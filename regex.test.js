@@ -7,7 +7,12 @@ characters (no numbers and symbols) and it should end with capital A else return
 
 function capitalA(s){
     // Add your logic.
-    return;
+let regex = /^\d |\W | A$/g
+
+
+
+let result = regex.test(s)
+    return   result
 }
 
 
@@ -16,7 +21,18 @@ which end with io (example@example.io) */
 
 function ioEmail(email){
     // Add your logic.
-    return;
+
+    // Add your logic.
+    let regexx = /example@example.io$/ig
+
+
+
+    let resultt = regexx.test(email)
+        
+    
+
+
+    return resultt
 }
 
 /* You have a text that contain image names with their extention you need to write a function to 
