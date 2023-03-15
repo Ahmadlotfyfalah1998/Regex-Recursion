@@ -1,8 +1,25 @@
 /* Write a function to do the division operation without using the built-in division*/
-
+let count =0
 function division(number, dividedBy) {
     // Write you logic here.
-    return;
+   
+if (number == 0|| dividedBy==0 ) {
+    return 0
+}
+
+else
+{
+ division(number-dividedBy,dividedBy)   
+count ++
+}
+
+
+
+
+
+
+return count
+    
 }
 
 /* Write a function that implement Math.pow(x,n) but using recursion
@@ -10,10 +27,27 @@ Example:
 pow(2,4) = 16
 */
 
-
+let countt = 1
 function pow(x, n) {
     // Write you logic here.
-    return;
+
+if (n==0){
+
+  return 1
+}
+else if (x == 0 ){
+
+   return 0
+
+}
+
+else {
+ countt = x * pow (x,n-1)
+ return countt
+}
+
+
+    
 }
 
 /* The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series,
@@ -24,7 +58,21 @@ Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n) {
     // Write you logic here.
-    return;
+if (n == 1 || n == 0)
+return n
+else{
+
+
+
+
+
+
+
+
+
+
+    return  fibonacci (n-1)   +  fibonacci(n-2);
+}
 }
 
 /* Optional 
